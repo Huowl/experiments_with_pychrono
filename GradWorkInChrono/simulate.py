@@ -70,7 +70,6 @@ class Simulate:
         flag_back_walk_robot = (speed.x <= -0.05) & (curr_time > 1.5)
         flag_stop_simulation = curr_time >= self.__stop_time
         
-        #print(f"coord_y: {coord.y}, time: {curr_time}")
         
         stop_simulation = ((flag_flying_robot | flag_fallen_robot |
                       flag_stay_robot | flag_back_walk_robot | flag_stop_simulation) &
